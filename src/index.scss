@@ -1,0 +1,11 @@
+@import "@mental-rebuilders/styles-reset-library/lib/base-reset.scss";
+@import "@fontsource/shanti";
+
+body {
+  font-family: "Shanti";
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

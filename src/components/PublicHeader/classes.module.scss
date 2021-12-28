@@ -1,0 +1,47 @@
+@import "src/styles/utils.scss";
+
+// This is intended to be used for when each nav item is hovered on
+// The display changes with a new menu being revealed to pick sub items from
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  font-size: 1.25rem;
+  display: flex;
+  width: 100%;
+  padding: 5px 10px;
+  align-items: center;
+  box-shadow: 1px 0px 5px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: auto;
+  a {
+    display: block;
+    color: currentColor;
+    text-decoration: none;
+    padding: 5px 10px;
+
+    &:hover {
+      color: currentColor;
+    }
+  }
+}
+
+.main_nav,
+.secondary_list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.secondary_list {
+  margin-left: auto;
+  li:not(.link_li),
+  .link_li a {
+    padding: 5px 10px;
+  }
+}
