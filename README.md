@@ -1,3 +1,3 @@
-# React Quack Quack Starter
+# My Page
 
-Just a convenient starter
+Currently a work in progress, but intended to become my blog and home page
