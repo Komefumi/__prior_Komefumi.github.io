@@ -1,12 +1,7 @@
-import { FC } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { ListOfTwoItemPayloads } from "common-ts-props/global";
-import PublicRouting from "./pages/Public";
+import AboutPage from "./pages/About";
+import BlogPage from "./pages/Blog";
 import classes from "./App.module.scss";
-
-const pathAndPageListForPublic: ListOfTwoItemPayloads<string, FC> = [
-  //  ["", HomePage],
-];
 
 function App() {
   return (
@@ -14,11 +9,8 @@ function App() {
       <main>
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<PublicRouting />}>
-              {pathAndPageListForPublic.map(([path, PageComponent]) => (
-                <Route key={path} path={path} element={<PageComponent />} />
-              ))}
-            </Route>
+            <Route path="/" element={<AboutPage />} />
+            <Route path="/blog" element={<BlogPage />} />
           </Routes>
         </BrowserRouter>
       </main>

@@ -1,0 +1,22 @@
+@import "src/styles/variables.scss";
+
+a.linkViolet,
+a.linkPurple {
+  text-decoration: none;
+}
+
+a.linkViolet {
+  &,
+  &:hover {
+    color: $chosenViolet;
+  }
+}
+
+a.linkPurple {
+  a.link {
+    &,
+    &:hover {
+      color: $chosenPurple;
+    }
+  }
+}

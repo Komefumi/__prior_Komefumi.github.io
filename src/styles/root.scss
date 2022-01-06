@@ -1,6 +1,10 @@
 @import "@mental-rebuilders/styles-reset-library/lib/base-reset.scss";
 @import "@fontsource/shanti";
 
+html {
+  font-size: 16px;
+}
+
 body {
   font-family: "Shanti";
 }
