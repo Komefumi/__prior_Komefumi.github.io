@@ -47,6 +47,7 @@ export default function PublicRouting({ topSlot, children }: Props) {
             className={linkClasses.linkPurple}
             href="https://html5up.net/stellar"
             target="_blank"
+            rel="noreferrer"
           >
             HTML5UP Stellar
           </a>

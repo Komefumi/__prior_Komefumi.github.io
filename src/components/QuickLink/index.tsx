@@ -15,6 +15,7 @@ export default function QuickLink({ variant, href, children }: Props) {
       )}
       href={href}
       target="_blank"
+      rel="noreferrer"
     >
       {children}
     </a>
