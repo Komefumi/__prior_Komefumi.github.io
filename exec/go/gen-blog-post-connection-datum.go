@@ -78,7 +78,7 @@ func main() {
 		if err != nil {
 			log.Fatal(err)
 		}
-		dataUnit := fmt.Sprintf("{ id: \"%s\", Component: import(\"../blog-posts/%s\"), title: \"%s\", description: \"%s\", date: \"%s\" },\n", filenameWithoutExt, filename, title, description, timeExtracted)
+		dataUnit := fmt.Sprintf("{ id: \"%s\", Component: import(\"../blog-posts/%s\"), title: \"%s\", description: \"%s\", date: \"%s\" },\n", filenameWithoutExt, filenameWithoutExt, title, description, timeExtracted)
 		_, err = f.WriteString(dataUnit)
 		if err != nil {
 			fmt.Println(err)
