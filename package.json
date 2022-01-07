@@ -1,5 +1,6 @@
 {
   "name": "my-page",
+  "homepage": "https://komefumi.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,6 +13,7 @@
     "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
     "clsx": "^1.1.1",
+    "luxon": "^2.3.0",
     "react": "^17.0.2",
     "react-app-rewired": "^2.1.9",
     "react-dom": "^17.0.2",
@@ -27,7 +29,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run r:build",
+    "deploy": "gh-pages -b main -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -49,9 +53,11 @@
   },
   "devDependencies": {
     "@mental-rebuilders/styles-reset-library": "^3.1.0",
+    "@types/luxon": "^2.0.8",
     "@types/react-router-dom": "^5.3.2",
     "common-ts-props": "^0.0.4",
     "customize-cra": "^1.0.0",
+    "gh-pages": "^3.2.3",
     "prettier": "^2.5.1",
     "sass": "^1.45.1"
   }

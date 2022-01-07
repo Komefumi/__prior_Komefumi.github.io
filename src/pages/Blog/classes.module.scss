@@ -1,0 +1,23 @@
+.link_to_post {
+  display: block;
+  text-decoration: none;
+  color: currentColor;
+  padding: 1rem;
+
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .title {
+    margin: 0;
+    margin-right: 5px;
+    font-size: 20px;
+  }
+  .date_rendered {
+    margin-left: auto;
+    font-size: 14px;
+    margin-top: 4px;
+  }
+}

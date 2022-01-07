@@ -11,21 +11,17 @@ const navPayload: DoubleStringList = [
   ["Blog", "/blog"],
 ];
 
-interface Props extends WrapperProps {
-  topSlot?: ReactNode;
-}
+interface Props extends WrapperProps {}
 
-export default function PublicRouting({ topSlot, children }: Props) {
+export default function PublicRouting({ children }: Props) {
   const location = useLocation();
-  console.log(location.pathname);
   return (
     <div className={classes.layout}>
-      <section className={classes.top_slot}>{topSlot}</section>
       <main className={classes.main}>
         <nav className={classes.nav}>
           <ul>
             {navPayload.map(([name, path]) => (
-              <li>
+              <li key={path}>
                 <Link
                   className={clsx(
                     path === location.pathname && classes.active_link

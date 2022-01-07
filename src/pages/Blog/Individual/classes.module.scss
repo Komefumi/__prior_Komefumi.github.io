@@ -1,0 +1,51 @@
+@import "src/styles/variables.scss";
+
+.page_content {
+}
+
+.util_bar,
+.post_main,
+.post_header,
+.error_notice {
+  padding: 1rem;
+}
+
+.util_bar {
+  border-top: 1px solid #dedede;
+  background-color: #f7f7f7;
+
+  a {
+    padding: 7.5px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #efefef;
+    transition: all 200ms ease;
+    &,
+    &:hover {
+      color: $chosenViolet;
+      display: inline-block;
+    }
+    &:hover {
+      background-color: #eaeaea;
+    }
+  }
+}
+
+.post_header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  .title {
+    margin: 0;
+    margin-right: 5px;
+    font-size: 20px;
+  }
+  .date_rendered {
+    display: block;
+    margin-left: auto;
+    font-size: 14px;
+  }
+}
+
+.post_rendering {
+}

@@ -57,7 +57,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	_, err = f.WriteString("export default [\n")
+	_, err = f.WriteString("import { lazy } from \"react\";\n\nexport default [\n")
 	if err != nil {
 		fmt.Println(err)
 		f.Close()
@@ -78,7 +78,7 @@ func main() {
 		if err != nil {
 			log.Fatal(err)
 		}
-		dataUnit := fmt.Sprintf("{ id: \"%s\", Component: import(\"../blog-posts/%s\"), title: \"%s\", description: \"%s\", date: \"%s\" },\n", filenameWithoutExt, filenameWithoutExt, title, description, timeExtracted)
+		dataUnit := fmt.Sprintf("{ id: \"%s\", title: \"%s\", description: \"%s\", date: \"%s\" },\n", filenameWithoutExt, title, description, timeExtracted)
 		_, err = f.WriteString(dataUnit)
 		if err != nil {
 			fmt.Println(err)
