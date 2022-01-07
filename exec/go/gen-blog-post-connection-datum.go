@@ -57,7 +57,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	_, err = f.WriteString("import { lazy } from \"react\";\n\nexport default [\n")
+	_, err = f.WriteString("const datum = [\n")
 	if err != nil {
 		fmt.Println(err)
 		f.Close()
@@ -86,7 +86,7 @@ func main() {
 		}
 	}
 
-	_, err = f.WriteString("];")
+	_, err = f.WriteString("];\n\nexport default datum;")
 	if err != nil {
 		fmt.Println(err)
 		f.Close()
