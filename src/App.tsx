@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import AboutPage from "./pages/About";
 import BlogPage from "./pages/Blog";
 import IndividualBlogPostPage from "./pages/Blog/Individual";
@@ -8,7 +8,7 @@ function App() {
   return (
     <div className={classes.App}>
       <main>
-        <BrowserRouter>
+        <HashRouter>
           <Routes>
             <Route path="/" element={<AboutPage />} />
             <Route path="/blog">
@@ -16,7 +16,7 @@ function App() {
               <Route path=":postId" element={<IndividualBlogPostPage />} />
             </Route>
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
       </main>
     </div>
   );
