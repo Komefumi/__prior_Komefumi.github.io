@@ -1,3 +1,3 @@
-# My Page
+# My Personal Site
 
-Currently a work in progress, but intended to become my blog and home page
+This is my homepage. It also functions as a blog. You can visit the live website [here](https://komefumi.github.io/)
