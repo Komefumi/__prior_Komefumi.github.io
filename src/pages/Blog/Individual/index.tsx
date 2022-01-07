@@ -1,14 +1,12 @@
 import {
   useState,
   useEffect,
-  FC,
   Suspense,
   lazy,
   LazyExoticComponent,
   ComponentType,
 } from "react";
 import { Link, useParams } from "react-router-dom";
-import { DateTime } from "luxon";
 import compiledBlogPostListDatum from "@/datum/blog-posts-connection";
 import Layout from "@/layout/General";
 import { prepareDateFromBlogPostDatum } from "@/utils/date";

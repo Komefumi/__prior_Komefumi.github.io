@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import Layout from "@/layout/General";
-import SectionItem from "@/components/BriefSection";
 import { prepareDateFromBlogPostDatum } from "@/utils/date";
 import { IBlogPostDatum } from "@/my-types";
 import compiledBlogPostListDatum from "@/datum/blog-posts-connection";

@@ -1,4 +1,3 @@
-import { ReactNode } from "react";
 import { Link, useLocation } from "react-router-dom";
 import clsx from "clsx";
 import { WrapperProps } from "common-ts-props/react";
