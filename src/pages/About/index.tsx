@@ -7,7 +7,7 @@ export default function AboutPage() {
   return (
     <Layout>
       <SectionItem title="About Me">
-        <p>My name is Arjun (but I like the name Kome-Fumi as you can tell).</p>
+        <p>My name is Arjun.</p>
         <p>
           I'm someone aspiring to become a hands-on scientist. There is a long
           way to that goal but I can see what I do on a daily basis to have
